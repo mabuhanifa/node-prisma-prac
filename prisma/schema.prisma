@@ -11,6 +11,13 @@ datasource db {
 }
 
 model User {
-  id   Int    @id @default(autoincrement())
-  name String
+  //id that wil auto increase
+  id      Int     @id @default(autoincrement())
+  name    String
+  email   String
+  isAdmin Boolean
+}
+
+model Post {
+  rating Float
 }
